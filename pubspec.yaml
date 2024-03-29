@@ -18,6 +18,8 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   flutter_bloc: ^8.1.5
+  google_nav_bar: ^5.0.6
+  line_icons: ^2.0.3
 
 dev_dependencies:
   flutter_test:
@@ -42,7 +44,7 @@ flutter:
   assets:
     - assets/images/
 
-  # fonts:
-  #   - family: Lato
-  #     fonts:
-  #       - asset: assets/fonts/Lato/Lato-Regular.ttf
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
