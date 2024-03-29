@@ -1,5 +1,3 @@
-import 'package:hospital/general/widgets/apptext.dart';
-
 import '../../exports.dart';
 
 
