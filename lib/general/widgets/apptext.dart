@@ -9,11 +9,11 @@ class AppText extends Text {
   final double fontSize;
 
   AppText.text(
-    String data, {
-    Key? key,
+    super.data, {
+    super.key,
     this.color = kTextColor,
-    this.fontWeight = FontWeight.w600,
-    TextAlign? textAlign = TextAlign.justify,
+    this.fontWeight = FontWeight.normal,
+    super.textAlign = TextAlign.justify,
     int? maxLine,
     TextOverflow? textOverflow,
     this.height,
@@ -21,9 +21,6 @@ class AppText extends Text {
     this.fontSize = 14,
     TextDecoration textDecoration = TextDecoration.none,
   }) : super(
-          key: key,
-          data,
-          textAlign: textAlign,
           maxLines: maxLine,
           style: TextStyle(
                 fontSize: fontSize,
@@ -32,6 +29,7 @@ class AppText extends Text {
                 fontWeight: fontWeight,
                 overflow: textOverflow,
                 letterSpacing: letterSpacing,
+                fontFamily: FontFamily.lato
               ),
         );
 }
