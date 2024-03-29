@@ -16,6 +16,10 @@ class $AssetsImagesGen {
   AssetGenImage get doctorBag =>
       const AssetGenImage('assets/images/doctor_bag.png');
 
+  /// File path: assets/images/hospital.png
+  AssetGenImage get hospital =>
+      const AssetGenImage('assets/images/hospital.png');
+
   /// File path: assets/images/medical_result.png
   AssetGenImage get medicalResult =>
       const AssetGenImage('assets/images/medical_result.png');
@@ -33,7 +37,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values =>
-      [doctorBag, medicalResult, medicine, stethoscope, surgeon];
+      [doctorBag, hospital, medicalResult, medicine, stethoscope, surgeon];
 }
 
 class Assets {

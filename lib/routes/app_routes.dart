@@ -11,5 +11,6 @@ class AppRoutes {
     Routes.forgot_password: (context) => const ForgotPasswordScreen(),
     Routes.login: (context) => const LoginScreen(),
     Routes.my_prescriptions_history: (context) => const PrescriptionsHistoryScreen(),
+    Routes.singlePrescription: (context) => const SinglePrescription(),
   };
 }

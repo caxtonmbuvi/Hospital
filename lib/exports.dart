@@ -19,3 +19,4 @@ export 'features/home/home.dart';
 export '../../gen/fonts.gen.dart';
 export 'general/widgets/apptext.dart';
 export 'general/widgets/nav_drawer.dart';
+export '../features/prescriptions/ui/prescription_detail.dart';
