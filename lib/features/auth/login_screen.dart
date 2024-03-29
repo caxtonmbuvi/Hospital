@@ -82,8 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                 child: CustomButton(
                   onTap: (){
-                    Navigator.pushNamed(context, Routes.my_prescriptions_history);
-                    // Navigator.pushNamed(context, Routes.landing);
+                    Navigator.pushNamed(context, Routes.landing);
                   },
                   text: "Login",
                   textColor: Colors.white,

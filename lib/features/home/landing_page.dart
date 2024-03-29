@@ -76,7 +76,7 @@ class _LandingPageState extends State<LandingPage> {
                 ),
                 GButton(
                   icon: LineIcons.search,
-                  text: 'Prescriptions',
+                  text: 'History',
                 ),
                 GButton(
                   icon: LineIcons.user,
