@@ -26,29 +26,47 @@ class NavDrawer extends StatelessWidget {
                 ],
               )
             ),
-            ListTile(
-              leading: Icon(Icons.home, color: const Color.fromARGB(255, 44, 96, 46),),
-              title: AppText.text('Page 1', fontSize: 18, fontWeight: FontWeight.bold,),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ListTile(
+                leading: Icon(Icons.home, color: const Color.fromARGB(255, 44, 96, 46),),
+                title: AppText.text('Home', fontSize: 18, fontWeight: FontWeight.bold,),
+              ),
             ),
-            ListTile(
-              leading: Icon(Icons.medication_outlined),
-              title: AppText.text('Page 1', fontSize: 20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ListTile(
+                leading: Icon(LineIcons.pills, color: const Color.fromARGB(255, 44, 96, 46),),
+                title: AppText.text('My Orders', fontSize: 18, fontWeight: FontWeight.bold,),
+              ),
             ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: AppText.text('Page 1', fontSize: 20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ListTile(
+                leading: Icon(LineIcons.prescription, color: const Color.fromARGB(255, 44, 96, 46),),
+                title: AppText.text('My Prescription', fontSize: 18, fontWeight: FontWeight.bold,),
+              ),
             ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: AppText.text('Page 1', fontSize: 20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ListTile(
+                leading: Icon(Icons.home, color: const Color.fromARGB(255, 44, 96, 46),),
+                title: AppText.text('Saved Addresses', fontSize: 18, fontWeight: FontWeight.bold,),
+              ),
             ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: AppText.text('Page 1', fontSize: 20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ListTile(
+                leading: Icon(Icons.home, color: const Color.fromARGB(255, 44, 96, 46),),
+                title: AppText.text('Wallet', fontSize: 18, fontWeight: FontWeight.bold,),
+              ),
             ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: AppText.text('Page 1', fontSize: 20,),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: ListTile(
+                leading: Icon(Icons.home, color: const Color.fromARGB(255, 44, 96, 46),),
+                title: AppText.text('Terms & Conditions', fontSize: 18, fontWeight: FontWeight.bold,),
+              ),
             ),
           ],
         ),
