@@ -29,7 +29,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
 
             Positioned(
               top: 10,
-              left: 10,
+              left: 0,
               child: GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, Routes.login);
@@ -41,7 +41,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               ),
             ),
 
-            SizedBox(height: 30.0),
+            SizedBox(height: 15.0),
 
             Center(
               child: Image.asset(
@@ -49,12 +49,11 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 height: 120, // Adjust height as needed
               ),
             ),
-
-            SizedBox(height: 5.0),
+            SizedBox(height: 15.0),
 
             Center(
               child: AppText.text(
-                "Password Reset",
+                "Utibu Health",
                 fontSize: 17,
                 fontWeight: FontWeight.bold,
                 color: Colors.blueGrey,
@@ -62,7 +61,6 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             ),
 
             SizedBox(height: 30.0),
-
 
             CustomTextField (
               controller: passwordController,

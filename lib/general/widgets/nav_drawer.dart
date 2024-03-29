@@ -1,5 +1,7 @@
 
 
+import 'package:flutter/cupertino.dart';
+
 import '../../exports.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -40,11 +42,16 @@ class NavDrawer extends StatelessWidget {
                 title: AppText.text('My Orders', fontSize: 18, fontWeight: FontWeight.bold,),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10),
-              child: ListTile(
-                leading: Icon(LineIcons.prescription, color: const Color.fromARGB(255, 44, 96, 46),),
-                title: AppText.text('My Prescription', fontSize: 18, fontWeight: FontWeight.bold,),
+            GestureDetector(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.my_prescriptions_history);
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: ListTile(
+                  leading: Icon(LineIcons.prescription, color: const Color.fromARGB(255, 44, 96, 46),),
+                  title: AppText.text('My Prescription History', fontSize: 18, fontWeight: FontWeight.bold,),
+                ),
               ),
             ),
             Padding(

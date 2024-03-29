@@ -6,4 +6,5 @@ class Routes {
   static const String register = '/register';
   static const String login = '/login';
   static const String forgot_password = '/forgotpassword';
+  static const String my_prescriptions_history = '/prescriptionshistory';
 }

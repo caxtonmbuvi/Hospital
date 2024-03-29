@@ -4,6 +4,7 @@ export 'package:google_nav_bar/google_nav_bar.dart';
 export 'package:line_icons/line_icons.dart';
 export 'package:hospital/features/auth/register_screen.dart';
 export 'package:hospital/features/auth/forgot_password_screen.dart';
+export 'package:hospital/features/history/prescriptions_history.dart';
 
 export 'package:hospital/general/widgets/custom_button.dart';
 export 'package:hospital/general/widgets/custom_textfield.dart';
