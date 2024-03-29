@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           theme: theme == ThemeType.light ? lightTheme : darkTheme,
-          initialRoute: Routes.landing,
+          initialRoute: Routes.login,
           // home: ,
           routes: AppRoutes.routes,
         );
