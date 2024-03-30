@@ -1,5 +1,6 @@
-import '../../exports.dart';
+import 'package:flutter/services.dart';
 
+import '../../exports.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -29,28 +30,11 @@ class _LandingPageState extends State<LandingPage> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.deepPurple[300],
-        
-      ),
-      drawer: const NavDrawer(),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 20,
-              color: Colors.black.withOpacity(.1),
-            )
-          ],
-          borderRadius:const BorderRadius.only(
-                topLeft: Radius.circular(30),
-                topRight: Radius.circular(30))
+    return SafeArea(
+      child: AnnotatedRegion(
+        value: const SystemUiOverlayStyle(
+          statusBarColor: Colors.blueGrey,
+          statusBarIconBrightness: Brightness.dark,
         ),
         child: SafeArea(
           child: Padding(
@@ -96,4 +80,3 @@ class _LandingPageState extends State<LandingPage> {
     );
   }
 }
-

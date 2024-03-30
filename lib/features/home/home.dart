@@ -1,8 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
 import 'package:hospital/exports.dart';
-import 'package:hospital/general/widgets/apptext.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -52,8 +50,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
+    return SingleChildScrollView(
         child: Column(
           children: [
             Container(
@@ -154,7 +151,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             )
           ],
         ),
-      ),
-    );
+      );
   }
 }

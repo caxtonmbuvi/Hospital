@@ -14,7 +14,7 @@ class CustomButton extends StatelessWidget {
   final FontWeight fontWeight;
 
   const CustomButton(
-      {Key? key,
+      {super.key,
         required this.text,
         this.onTap,
         this.color,
@@ -26,8 +26,7 @@ class CustomButton extends StatelessWidget {
         this.fontSize = 18,
         this.textSize = 14,
         this.fontWeight = FontWeight.bold
-      })
-      : super(key: key);
+      });
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +50,7 @@ class CustomButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             widget!,
-            SizedBox(
+            const SizedBox(
               width: 20
             ),
             AppText.text(

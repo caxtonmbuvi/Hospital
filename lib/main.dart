@@ -1,5 +1,6 @@
-import 'exports.dart';
+import 'package:flutter/services.dart';
 
+import 'exports.dart';
 
 void main() {
   runApp(
@@ -22,8 +23,14 @@ class MyApp extends StatelessWidget {
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           theme: theme == ThemeType.light ? lightTheme : darkTheme,
-          initialRoute: Routes.login,
-          // home: ,
+          // initialRoute: Routes.login,
+          home: const AnnotatedRegion(
+            value: SystemUiOverlayStyle(
+              statusBarColor: Colors.blueGrey,
+              statusBarIconBrightness: Brightness.dark,
+            ),
+            child: LoginScreen(),
+          ),
           routes: AppRoutes.routes,
         );
       },

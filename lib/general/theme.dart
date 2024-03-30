@@ -4,7 +4,7 @@ final ThemeData lightTheme = ThemeData(
   // Define your light theme properties here
   brightness: Brightness.light,
   primaryColor: Colors.blue,
-  // scaffoldBackgroundColor: Color(0xff212129)
+  // scaffoldBackgroundColor: Colors.blueGrey
   // Add more properties as needed
 );
 
