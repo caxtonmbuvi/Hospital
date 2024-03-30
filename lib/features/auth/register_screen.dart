@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hospital/exports.dart';
 
-import '../../gen/assets.gen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
